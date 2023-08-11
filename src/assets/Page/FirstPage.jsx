@@ -7,6 +7,7 @@ function FirstPage() {
       <Link to={'/1stPage/ChildPage1'}>sup nav 1st</Link>
       <Link to={'/1stPage/ChildPage2'}>sup nav 2nd</Link>
       <Link to={'/1stPage/ChildPage3'}>sup nav 3rd</Link>
+      <Link to={' '}>sup nav 4rd</Link>
    </nav>
    return (
       <>
