@@ -9,7 +9,9 @@
 ## github
 1. edit .gitignore ให้ เรียบร้อย
 2. add ทุกไฟล์
-> $ git add . 
+> '''
+> $ git add .
+> '''  
 3. add commit
 > $ git commit -m "first commit"
 4. git push
