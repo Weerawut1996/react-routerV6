@@ -14,9 +14,9 @@ function FirstPage() {
             <h1>First Page</h1>
          </header>
          <NavberTab />
-         <section><p>Main</p></section>
+         <section><p>Main</p><Outlet/></section>
          <div className="sidebar"><p>Sidebar</p>{navbarSupNav}</div>
-         <div className="content1"><p>Content1</p><Outlet/></div>
+         <div className="content1"><p>Content1</p></div>
          <div className="content2">Content2</div>
          <div className="content3">Content3</div>
          <footer>Footer</footer>
