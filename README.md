@@ -11,3 +11,9 @@ npm init -y
 ```
 npm run dev
 ```
+
+# node_modules
+- "react-router-dom": "^6.14.2" 
+```cmd
+npm i react-router-dom@6.14.2
+```
