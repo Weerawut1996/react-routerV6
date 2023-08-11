@@ -4,7 +4,9 @@
 > npm i
 
 ## install package.json
+```cmd
 > npm init -y
+```
 
 ## github
 1. edit .gitignore ให้ เรียบร้อย
