@@ -10,7 +10,7 @@
 1. edit .gitignore ให้ เรียบร้อย
 2. add ทุกไฟล์
 > ```bash
-> $ git add .
+> git add .
 > ```  
 3. add commit
 > $ git commit -m "first commit"
