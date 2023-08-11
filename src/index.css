@@ -1,0 +1,120 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   background-color: #212529 !important
+}
+
+.d-inline-block{
+   display: inline-block;
+}
+.d-grid {
+   display: grid;
+   
+}
+
+.d-flex {
+   display: flex;
+}
+
+.gap-10px{
+   gap: 10px;
+}
+
+.supnav-block > *{
+   display: block;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
+   grid-template-areas:
+     "header header header header"
+     "nav nav nav nav"
+     "sidebar main main content3"
+     "sidebar content1 content2 content3"
+     "footer footer footer footer";
+   grid-gap: 0.2rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   font-size: 12px;
+   color: #004d40;
+   text-align: center;
+ }
+ 
+ .container header{
+   background: #1de9b6;
+   grid-area: header;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+ }
+
+ .container nav {
+   background: #a7ffeb;
+   grid-area: nav;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+ }
+ 
+ .container section {
+   background: #84ffff;
+   grid-area: main;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+ }
+ 
+ .container .sidebar {
+   background: #18ffff;
+   grid-area: sidebar;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+ }
+ 
+ .container .content1 {
+   background: #6fffd2;
+   grid-area: content1;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+ }
+ 
+ .container .content2 {
+   background: #64ffda;
+   grid-area: content2;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+ }
+ 
+ .container .content3 {
+   background: #73ffba;
+   grid-area: content3;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+ }
+ 
+ .container footer {
+   background: #1de9b6;
+   grid-area: footer;
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+ }
+ @media only screen and (max-width: 750px) {
+     .container {grid-template-columns: 0.75fr 1.25fr 1.25fr 0.75fr;}
+ }
+ 
+ @media only screen and (max-width: 600px) {
+   .container {
+     grid-template-columns: 1.8fr 0.2fr; 
+     grid-template-areas:
+       "header header"
+       "nav sidebar"
+       "main main"
+       "content1 content1"
+       "content2 content2"
+       "content3 content3"
+       "footer footer";
+   }
+ }
