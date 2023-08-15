@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import Firstpage from './Page/FirstPage'
-import {FirstpageChild1st ,FirstpageChild2st,FirstpageChild3st } from './Page/1stPageChildPage/FirstpageChildPage'
+import {FirstpageChild1st ,FirstpageChild2st,FirstpageChild3st, FirstpageChild4th } from './Page/1stPageChildPage/FirstpageChildPage'
 import SecondPage from './Page/SecondPage';
 import ThirdPage from './Page/ThirdPage';
 import ErrorPage from './Page/ErrorPage';
@@ -21,6 +21,7 @@ const router = createBrowserRouter([
          { path: "/1stPage/ChildPage1", element: <FirstpageChild1st /> },
          { path: "/1stPage/ChildPage2", element: <FirstpageChild2st /> },
          { path: "/1stPage/ChildPage3", element: <FirstpageChild3st /> },
+         { path: "/1stPage/ChildPage4", element: <FirstpageChild4th /> },
        ],
    },
    {
