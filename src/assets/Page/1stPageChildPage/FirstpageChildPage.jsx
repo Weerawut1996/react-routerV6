@@ -17,6 +17,7 @@ export function FirstpageChild2st() {
       <h3>22222222222222222</h3>
       <div>
          <p>Export multiple functions or components from a file in React </p>
+         <p>Export multiple functions or components from a file in React </p>
       </div>
       </>
    )
@@ -28,6 +29,23 @@ export function FirstpageChild3st() {
       <h3>First - page - Child - 3nd</h3>
       <h3>33333333333333333</h3>
       <div>
+         <p>Export multiple functions or components from a file in React </p>
+         <p>Export multiple functions or components from a file in React </p>
+         <p>Export multiple functions or components from a file in React </p>
+      </div>
+      </>
+   )
+}
+
+export function FirstpageChild4th() {
+   return(
+      <>
+      <h3>First - page - Child - 4th</h3>
+      <h3>44444444444444444</h3>
+      <div>
+         <p>Export multiple functions or components from a file in React </p>
+         <p>Export multiple functions or components from a file in React </p>
+         <p>Export multiple functions or components from a file in React </p>
          <p>Export multiple functions or components from a file in React </p>
       </div>
       </>
