@@ -1,3 +1,10 @@
+:root {
+   --a1in4rem: 0.25rem;
+   --aHaftrem: 0.5rem;
+   --a1rem: 1rem;
+   --test-bgcolor: #999;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -6,115 +13,118 @@
 
 body {
    width: 100%;
-   background-color: #212529 !important
+   background-color: #000 !important
 }
 
-.d-inline-block{
+a{
+   color: #fff;
+}
+
+.supnav-block > * {
+   display: block;
+}
+
+.d-inline-block {
    display: inline-block;
 }
+
 .d-grid {
    display: grid;
-   
+
 }
 
 .d-flex {
    display: flex;
 }
 
-.gap-10px{
+.gap-10px {
    gap: 10px;
 }
 
-.supnav-block > *{
-   display: block;
+.text-fff{
+   color: #fff;
 }
 
 .container {
    display: grid;
-   grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
+   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
    grid-template-areas:
-     "header header header header"
-     "nav nav nav nav"
-     "sidebar main main content3"
-     "sidebar content1 content2 content3"
-     "footer footer footer footer";
+      "header header header header header"
+      "nav nav nav nav nav"
+      "sidebar main main main content3"
+      "sidebar content1 content1 content2 content3"
+      "footer footer footer footer footer";
    grid-gap: 0.2rem;
    font-weight: 800;
    text-transform: uppercase;
    font-size: 12px;
    color: #004d40;
    text-align: center;
- }
- 
- .container header{
-   background: #1de9b6;
-   grid-area: header;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
- }
+}
 
- .container nav {
-   background: #a7ffeb;
+.container header {
+   background: var(--test-bgcolor);
+   color: #fff;   
+   padding: var(--aHaftrem) 0;
+   grid-area: header;
+}
+
+.container nav {
    grid-area: nav;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
- }
- 
- .container section {
-   background: #84ffff;
+}
+
+.container #nanvar{
+   padding: var(--aHaftrem);
+   background: var(--test-bgcolor);
+}
+
+.container section {
+   background: var(--test-bgcolor);
    grid-area: main;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
- }
- 
- .container .sidebar {
-   background: #18ffff;
+}
+
+.container .sidebar {
+   background: var(--test-bgcolor);
    grid-area: sidebar;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
- }
- 
- .container .content1 {
-   background: #6fffd2;
+   padding: var(--aHaftrem) 0;
+}
+
+.container .content1 {
+   background: var(--test-bgcolor);
    grid-area: content1;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
- }
- 
- .container .content2 {
-   background: #64ffda;
+}
+
+.container .content2 {
+   background: var(--test-bgcolor);
    grid-area: content2;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
- }
- 
- .container .content3 {
-   background: #73ffba;
+}
+
+.container .content3 {
+   background: var(--test-bgcolor);
    grid-area: content3;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
- }
- 
- .container footer {
-   background: #1de9b6;
+}
+
+.container footer {
+   background: var(--test-bgcolor);
    grid-area: footer;
-   border-radius: var(--main-radius);
-   padding-top: var(--main-padding);
- }
- @media only screen and (max-width: 750px) {
-     .container {grid-template-columns: 0.75fr 1.25fr 1.25fr 0.75fr;}
- }
- 
- @media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 750px) {
    .container {
-     grid-template-columns: 1.8fr 0.2fr; 
-     grid-template-areas:
-       "header header"
-       "nav sidebar"
-       "main main"
-       "content1 content1"
-       "content2 content2"
-       "content3 content3"
-       "footer footer";
+      grid-template-columns: 0.75fr 1.25fr 1.25fr 0.75fr;
    }
- }
+}
+
+@media only screen and (max-width: 600px) {
+   .container {
+      grid-template-columns: 1.8fr 0.2fr;
+      grid-template-areas:
+         "header header"
+         "nav sidebar"
+         "main main"
+         "content1 content1"
+         "content2 content2"
+         "content3 content3"
+         "footer footer";
+   }
+}
