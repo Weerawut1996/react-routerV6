@@ -1,8 +1,10 @@
 import { Link, Outlet } from 'react-router-dom';
 import NavberTab from '../Component/NavberTab';
+import iconpic from '../pubilc_ico';
 
 function FirstPage() {
    document.title = 'First Page';
+   document.getElementById('page-ico').setAttribute('href',iconpic[1]);
    const navbarSupNav = <nav className='supnav-block'>
       <Link to={'/1stPage/ChildPage1'}>sup nav 1st</Link>
       <Link to={'/1stPage/ChildPage2'}>sup nav 2nd</Link>
@@ -15,12 +17,11 @@ function FirstPage() {
             <h1>First Page</h1>
          </header>
          <NavberTab />
-         <section><p>Main</p><Outlet/></section>
-         <div className="sidebar"><p>Sidebar</p>{navbarSupNav}</div>
-         <div className="content1"><p>Content1</p></div>
-         <div className="content2">Content2</div>
-         <div className="content3">Content3</div>
-         <footer>Footer</footer>
+         <div className="sidebar"><h2 className="text-fff">Sidebar</h2>{navbarSupNav}</div>
+         <section><h2 className="text-fff">Main</h2><Outlet/></section>
+         <div className="content1"><h2 className="text-fff">Content1</h2></div>
+         <div className="content2"><h2 className='text-fff'>Content2</h2></div>
+         <div className="content3"><h2 className='text-fff'>Content3</h2></div>
       </>
    )
 }
