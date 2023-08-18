@@ -18,11 +18,11 @@ function SecondPage() {
             <h1>Second page</h1>
          </header>
          <NavberTab />         
-         <div className="sidebar"><h2 className="text-fff">Sidebar</h2>{navbarSupNav}</div>
-         <section><h2 className="text-fff">Main</h2></section>
-         <div className="content1"><h2 className="text-fff">Content1</h2><Outlet/></div>
-         <div className="content2"><h2 className='text-fff'>Content2</h2></div>
-         <div className="content3"><h2 className='text-fff'>Content3</h2></div>
+         <div className="sidebar"><h2>Sidebar</h2>{navbarSupNav}</div>
+         <section><h2>Main</h2></section>
+         <div className="content1"><h2>Content1</h2><Outlet/></div>
+         <div className="content2"><h2>Content2</h2></div>
+         <div className="content3"><h2>Content3</h2></div>
      </>
    )
  }
